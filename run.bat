@@ -1,0 +1,1 @@
+python calendar-cli.py --caldav-url="https://www.guohw.site:5001/caldav/howard" --caldav-user="howard" --caldav-pass="456255" --calendar-url="work" --caldav-proxy="http://127.0.0.1:1080" --ssl-verify-cert="no" --debug-logging calendar add 2019-10-01 8888888888
