@@ -150,7 +150,7 @@ def _calendar_addics(caldav_conn, ics, uid, args):
 
     try:
         c = find_calendar(caldav_conn, args)
-        if re.search(r'^METHOD:[A-Z]+[\r\n]+',ics,flags=re.MULTILINE) and args.ignoremethod:
+        if re.search(r'^METHOD:[A-Z]+[\r\n]+',str(ics),flags=re.MULTILINE) and args.ignoremethod:
             ics = re.sub(r'^METHOD:[A-Z]+[\r\n]+', '', ics, flags=re.MULTILINE)
             print ("METHOD property found and ignored")
         c.add_event(ics)
